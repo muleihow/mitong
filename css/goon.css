@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 1130px;
+    margin: 0 auto;
+    /* position: absolute; */
+
+}
+.logo{
+    width: 200px;
+    height: 98px;
+    background: url(../img/mistore_logo.png)no-repeat;
+}
+header a{
+    height: 98px;
+    display: block;
+    color: white;
+}
+.banner{
+    width: 100%;
+    height: 588px;
+    position: relative;
+    left: 0;
+    /* top: 98px; */
+    background: url(../img/72644d9b8031286de3cc74e151aefd90.jpg)no-repeat;
+    background-position: top center;    
+}
+.banner a{
+    display: block;
+    height: 588px;
+    text-indent: -9999em;
+}
+.bibox{
+    width: 410px;
+    height: 556px;
+    background: #fff;
+    position: absolute;
+    top: 130px;
+    right: 100px;
+
+}
+.fangsi{
+    padding: 27px 0 24px;
+    text-align: center;
+    font-size: 24px;
+   
+}
+.fangsi a{
+    text-decoration: none;
+    color: #666666;
+    
+}
+.fangsi a:hover{
+    color: #ff6700;
+}
+.fangsi span{
+    color: #e0e0e0;
+}
+.kaolo input{
+
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+    
+    background: none;
+    border: 0 none;
+}
+.uname{
+    width: 306px;
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.upwd{
+    width: 306px;
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.anniu{
+    width: 306px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.anniu input{
+    background: none;
+    border: 0 none;
+    background-color: #ff6700;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.boty{
+    text-align: center;
+}
+.sho{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ff6700;
+}
+.wangj{
+    margin-top: 40px;
+}
+.wangj a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+.wangj span{
+    font-size: 12px;
+    color: #666666;
+}
+.yuan{
+    width: 348px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+.yuan a{
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 27px;
+    border-radius: 50%;
+    margin: 0 17px;
+    padding-top: 3px;
+    float: left;
+}
+.yuan a:nth-child(1){
+    /* background: url(../img/icons_type.png)-13px 6px no-repeat; */
+    /* background-size: 30px; */
+    background-color: #0288d1;
+    margin-left: 72px;  
+}
+.yuan a:nth-child(1) i{
+    background: url(../img/icons_type.png)-19px -1px no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 4px auto 0;
+    
+}
+.yuan a:nth-child(2){
+    background: #d32f2f;
+}
+.yuan a:nth-child(2) i{
+    background: url(../img/icons_type.png)-38px -1px no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 4px auto 0;
+    
+}
+.yuan a:nth-child(3){
+    background: #0ae;
+}
+.yuan a:nth-child(3) i{
+    background: url(../img/icons_type.png)-56px -1px no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 4px auto 0;
+    padding-right: 8px;
+}
+.yuan a:nth-child(4){
+    background: #00d20d;
+}
+.yuan a:nth-child(4) i{
+    background: url(../img/icons_type.png)-84px 0px no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 3px auto 0;
+    padding: 0 3px;
+    
+}
+.bmo{
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+    padding-top: 100px;
+}
+.yun{
+    margin-left: 88px;
+}
+.yun li{
+    list-style: none;
+    float: left;
+    /* margin-left: 50px; */
+}
+.yun a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #666666;
+    /* display: block; */
+    line-height: 16px;
+    padding: 30px;
+}
+.kpl{
+    color: #666666;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.kpl a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+}
+.kpl img{
+    width: 12px;
+    height: 12px;  
+}

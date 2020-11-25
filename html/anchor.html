@@ -76,6 +76,7 @@
         background: url(../img/totop.png)3px no-repeat;
         background-size: 20px;
         margin-top: 14px;
+        display: none;
     }
 
     .totop:hover {
@@ -94,3 +95,28 @@
     <div class="gouwu"></div>
     <div class="totop"></div>
 </div>
+
+<script>
+    var toTop = document.querySelector('.totop');
+    window.onscroll = function(){
+        if(document.documentElement.scrollTop>document.documentElement.clientHeight){
+            toTop.style.display = "block";
+        }else{
+            toTop.style.display = "none";
+        }
+    }
+
+    toTop.onclick = function(){
+        var sy = document.body.scrollTop || document.documentElement.scrollTop;
+        var timer;
+        timer = setInterval(function(){
+            sy -= 40;
+            if(sy <= 0){
+                sy = 0;
+                clearInterval(timer);
+            }
+            document.body.scrollTop = sy;
+            document.documentElement.scrollTop = sy;
+        },20);
+    }
+</script>
