@@ -37,20 +37,28 @@
 .nan-left a:hover{
     background-color: #ff6700;
 }
-.banner{
+.wrap{
     width: 1226px;
     height: 460px;
     position: relative;
 }
-.banner img{
+.main{
+    width: 1226px;
+    height: 460px;
+    position: relative;
+}
+.main img{
     width: 1226px;
     height: 460px;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
-    opacity: 0.02;
+    opacity: 0.1;
 }
+.main img.show{
+    z-index: 10;
+  }
 .prev{
     position: absolute;
     left: 250px;
@@ -79,14 +87,14 @@
 .next:hover{
     background: url('../img/icon-slides.png')124px;
 }
-.num{
+.nums{
     overflow: hidden;
     position: absolute;
     right: 15px;
     bottom: 15px;
     z-index: 99;
 }
-.num li{
+.nums li{
     list-style: none;
     float: left;
     width: 5px;
@@ -100,7 +108,7 @@
 .main .show{
     z-index: 10;
 }
-.num .active{
+.nums .active{
     background-color: lightblue;
 }
 .nan-bot{
@@ -147,7 +155,7 @@
     margin: 20px 0px 0px 14px;
 }
 .miao{
-    width: 1226px;
+    width: 1244px;
     height: 340px;
     margin: 0 auto;
 }
@@ -174,10 +182,16 @@
     right: 40px;
     top: 10px;
 }
+#io span:nth-child(1):hover{
+    color: #ff6700;
+}
 #io span:nth-child(2){
     position: absolute;
     right: 5px;
     top: 10px;
+}
+#io span:nth-child(2):hover{
+    color: #ff6700;
 }
 .iten{
     width: 234px;
@@ -222,14 +236,31 @@
     margin-left: 32px;
 }
 .wind{
+    margin-left: 10px;
+    position: relative;
     width: 990px;
     height: 340px;
     float: left;
     overflow: hidden;
 }
 .bing{
-    width: 3000px;
+    position: absolute;
+    width: 2952px;
     height: 340px;
+    -webkit-animation: bing 20s infinite; /* Chrome, Safari, Opera */
+    animation: bing 10s infinite;
+}
+@keyframes bing
+	{
+	from {left:0px;}
+	to {left:-1476px;}
+}
+
+/*Safari 和 Chrome:*/
+@-webkit-keyframes bing
+{
+	from {left:0px;}
+	to {left:-1476px;}
 }
 .bing a{
     display: block;
@@ -266,7 +297,7 @@
 .gos{
     width: 1226px;
     display: block;
-    margin: 34px auto;
+    margin: 80px auto;
 }
 .byphone{
     width: 1226px;

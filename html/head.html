@@ -54,6 +54,35 @@
         float: left;
     }
 
+    .nav-left {
+        position: relative;
+    }
+
+    .erwei {
+        position: absolute;
+        top: 40px;
+        left: 68%;
+        width: 124px;
+        background: #fff;
+        margin-left: -55px;
+        box-shadow: 0 1px 5px #aaa;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        line-height: 1;
+        transition: height .3s;
+        height: 148px;
+        z-index: 99999;
+        display: none;
+    }
+    .erwei img{
+        width: 90px;
+        height: 90px;
+        display: block;
+         margin: 18px auto 12px;
+         
+    }
+
     .nav-cent {
         margin-right: 24px;
     }
@@ -108,16 +137,19 @@
         background-size: 55px;
         background-color: #ff6700;
     }
-    .too{
+
+    .too {
         float: right;
         width: 960px;
         height: 55px;
-        
+
     }
-    .nau{
+
+    .nau {
         float: left;
     }
-    .nau a{
+
+    .nau a {
         display: block;
         color: #333333;
         float: left;
@@ -125,26 +157,29 @@
         padding-left: 16px;
     }
 
-    .nau a:hover{
+    .nau a:hover {
         color: #ff6700;
     }
-    .sousuo{
+
+    .sousuo {
         float: right;
         margin-right: 25px;
     }
-    .sousuo input{
+
+    .sousuo input {
         height: 55px;
-        border:1px solid #e0e0e0;
+        border: 1px solid #e0e0e0;
     }
-    .sousuo input:nth-child(2){
+
+    .sousuo input:nth-child(2) {
         width: 55px;
         border-left: none;
         margin: -5px;
         height: 57px;
         /* font-family: iconfont,sans-serif; */
     }
-        
-    .sousuo input:nth-child(2):hover{
+
+    .sousuo input:nth-child(2):hover {
         background: #ff6700;
         color: #fff;
     }
@@ -159,7 +194,7 @@
                 <li class="app"><a href="">糯米</a></li>
                 <li><a href="">黑米</a></li>
             </ul>
-
+            <div class="erwei"><img src="../img/93650133310ec1c385487417a472a26c.png" alt="">小米商城APP</div>
         </div>
         <div class="nav-two">
             <div class="nav-cent">
@@ -186,6 +221,7 @@
                 <a href=""><span>米忠</span></a>
                 <a href=""><span>米色</span></a>
             </ul>
+            
         </div>
         <div class="sousuo">
             <input type="text">
@@ -194,3 +230,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    var app = document.querySelector('.app');
+    var erWei = document.querySelector('.erwei');
+    
+    app.onmouseover = function() {
+        erWei.style.display = "block";
+    }
+    app.onmouseout = function() {
+        erWei.style.display = "none";
+    }
+</script>
